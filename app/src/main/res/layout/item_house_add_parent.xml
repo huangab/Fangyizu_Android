@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--二级菜单list的item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_check_father"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/expandablelist_cb_allselect"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/all_checked"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_floors_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:gravity="center_vertical"
+            android:text="n楼"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_02"
+            />
+
+        <ImageView
+            android:id="@+id/iv_expan_item_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/selector_expandable_right"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/whitesmoke"
+              android:orientation="vertical">
+
+
+    <include layout="@layout/title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="每个用户最多可关联10张银行卡"/>
+
+    <ListView
+
+        android:id="@+id/list_me_BandCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:paddingTop="1dp"
+        android:scrollbars="none"
+        ></ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="长按可解除绑定"/>
+
+    <Button
+        android:id="@+id/tv_me_BankCard_AddCard"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/selector_background_button"
+        android:padding="10dp"
+        android:text="添加"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_size"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="130dp">
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/pop_dianbiaoshuibiao"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="32dp">
+
+            <LinearLayout
+                android:id="@+id/ll_pop_hydropower_water"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_pop_hydropower_water_select"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/select_sort"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/iv_pop_hydropower_water"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/shuibiao_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_hydropower_water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="水表"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_05"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/lightgray"/>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_hydropower_electricity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_pop_hydropower_electricity_select"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/select_sort"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/iv_pop_hydropower_electricity"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/dianbiao_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_hydropower_electricity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="电表"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_05"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

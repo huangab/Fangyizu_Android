@@ -1,0 +1,85 @@
+<resources>
+    <!-- 按钮字体大小-->
+    <dimen name="button_size">16sp</dimen>
+
+    <dimen name="money_big">60sp</dimen>
+    <!-- 大号金钱-->
+
+    <dimen name="money_middle">40sp</dimen>
+    <!-- 中号金钱-->
+
+    <dimen name="money_small">30sp</dimen>
+    <!-- 小号金钱-->
+
+    ----------------------------------------------
+    <!--todo 以下为大号字体-->
+    <dimen name="text_01">21sp</dimen>
+    <!--首页大文字-->
+
+    <dimen name="text_02">19sp</dimen>
+    <!--目前用到的地方:title标题 -->
+
+    <dimen name="text_03">17sp</dimen>
+    <!--目前用到的地方:弹出dialog标题 -->
+
+    ----------------------------------------------
+    <!--todo 以下为中号字体-->
+    <dimen name="text_04">15sp</dimen>
+    <!--用于大部分文字  目前用到的地方:登陆模块    dialog一级文字-->
+
+    <dimen name="text_05">14sp</dimen>
+    <!--用于大部分文字   目前用到的地方: 首页正文 dialog二级文字-->
+
+    <dimen name="text_06">13sp</dimen>
+    <!--用于大部分文字 目前用到的地方:title返回按钮文字-->
+
+
+    ----------------------------------------------
+    <!--todo 以下为小号字体-->
+    <dimen name="text_07">12sp</dimen>
+    <!--目前用到的地方: 获取验证码按钮-->
+
+    <dimen name="text_08">11sp</dimen>
+
+    <dimen name="text_09">10sp</dimen>
+
+    ----------------------------------------------
+    <!--todo 以下为边距-->
+    <dimen name="padding_big">20dp</dimen>
+    <dimen name="padding_middle">10dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    ----------------------------------------------
+    <!--todo 以下为所有单条Item高度-->
+    <dimen name="item_hight">50dp</dimen>
+    <!--todo 以下为所有按钮高度-->
+    <dimen name="button_hight">40dp</dimen>
+
+
+    ------------------------------------------------------
+
+    <!-- 引导界面的参数-->
+    <dimen name="welcome_images_size">360.0dip</dimen>
+    <dimen name="welcome_images_margin_top">0.0dip</dimen>
+    <dimen name="welcome_heading_margin_bottom">12.0dip</dimen>
+    <dimen name="welcome_text_margin">48.0dip</dimen>
+    <dimen name="welcome_heading">24.0sp</dimen>
+    <dimen name="welcome_text_margin_bottom">12.0dip</dimen>
+    <dimen name="welcome_content_min_height">96.0dip</dimen>
+    <dimen name="welcome_content">16.0sp</dimen>
+
+
+
+    ----------------------------------------------
+    <!--图表的参数-->
+    <dimen name="pie_chart_text1_size">42sp</dimen>
+    <dimen name="pie_chart_text2_size">16dp</dimen>
+
+
+
+
+</resources>

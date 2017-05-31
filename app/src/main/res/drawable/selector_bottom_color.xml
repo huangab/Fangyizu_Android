@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--底部菜单栏颜色的变化  色值f9f9f9-->
+    <item android:drawable="@color/lightgray"
+          android:state_pressed="true"></item>
+
+    <item android:drawable="@color/tab_bottom_background"></item>
+
+</selector>

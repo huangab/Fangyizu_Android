@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="@color/button_color_pressed">
+    <item>
+
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <!--黑色边缘 白色内容的选择器-->
+            <item
+                android:drawable="@drawable/fillet_white2_dark"
+                android:state_pressed="true"></item>
+
+            <item android:drawable="@drawable/fillet_white2"></item>
+
+        </selector>
+    </item>
+</ripple>

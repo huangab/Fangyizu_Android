@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--二级菜单list的item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_bottom_background"
+        android:orientation="vertical"
+        >
+        <!-- 第一行 -->
+        <LinearLayout
+            android:id="@+id/ll_item_house_all_one"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0.5dp"
+            android:orientation="horizontal">
+
+            <!-- 第一个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_tuizu"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="退租"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_06"/>
+            </LinearLayout>
+
+            <!-- 第二个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item2"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_xuzu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="续约"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_06"/>
+            </LinearLayout>
+
+            <!-- 第三个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item3"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_zhangzu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="涨租"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_06"/>
+
+            </LinearLayout>
+
+            <!-- 第四个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item4"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_huanfang"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="换房"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_06"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- 第二行 -->
+        <LinearLayout
+            android:id="@+id/ll_item_house_all_two"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0.5dp"
+
+            android:orientation="horizontal">
+
+            <!-- 第一个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item21"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_fangke"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="租客"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_06"/>
+            </LinearLayout>
+
+            <!-- 第二个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item22"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_heyue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="合约"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_06"/>
+            </LinearLayout>
+
+            <!-- 第三个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item23"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_fangjianxinxi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="房间信息"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_06"/>
+
+            </LinearLayout>
+
+            <!-- 第四个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item24"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_jilu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="收租记录"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_06"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 第三行 -->
+        <LinearLayout
+            android:id="@+id/ll_item_house_all_three"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0.5dp"
+            android:orientation="horizontal">
+
+            <!-- 第一个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item31"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_chuzu"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="出租"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_06"/>
+            </LinearLayout>
+
+            <!-- 第二个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item32"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_cexiao"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="撤销退租"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_06"/>
+            </LinearLayout>
+
+            <!-- 第三个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item33"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_fangjianxinxi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="房间信息"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_06"/>
+
+            </LinearLayout>
+
+            <!-- 第四个 按钮 -->
+
+            <LinearLayout
+                android:id="@+id/ll_house_all_item34"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <ImageView
+
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:src="@mipmap/all_jilu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="收租记录"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_06"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lightgray"/>
+</LinearLayout>

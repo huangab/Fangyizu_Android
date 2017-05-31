@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <ScrollView
+        android:id="@+id/sv_real"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--点击扫描身份证 -->
+            <LinearLayout
+                android:id="@+id/ll_me_real_takephoto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_top_bottom_white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/er_weima_dark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="点击扫描身份证"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04"/>
+
+
+            </LinearLayout
+                >
+            <!-- 正反面-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/selector_top_bottom_white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:id="@+id/iv_real_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:src="@mipmap/shenfengzheng_zhengmian"
+                    />
+
+                <ImageView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:src="@color/lightgray"/>
+
+                <ImageView
+                    android:id="@+id/iv_real_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1
+                    "
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:src="@mipmap/shenfenzheng_fangmian"
+                    />
+
+            </LinearLayout
+                >
+
+            <!-- 正反面-->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_top_bottom_white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_launcher"
+                    android:text="点击图片可查看大图"
+                    />
+
+
+            </LinearLayout
+                >
+
+
+            <!--身份证卡号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:id="@+id/et_real_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:digits="1234567890x"
+                    android:enabled="false"
+                    android:hint="扫描后显示"
+                    android:maxLength="18"
+                    android:paddingLeft="5dp"
+
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+
+
+            </LinearLayout>
+
+            <!--姓名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:id="@+id/et_real_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:hint="扫描后显示"
+                    android:paddingLeft="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+
+
+            </LinearLayout>
+
+            <!--性别-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="性别 "
+                    android:textSize="@dimen/text_04"/>
+
+
+                <RadioGroup
+                    android:id="@+id/rg_me_real_father"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_me_real_man"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/all_checked"
+                        android:text=" 男"
+                        >
+
+                        <requestFocus/>
+                    </RadioButton>
+
+
+                    <RadioButton
+                        android:id="@+id/rb_me_real_woman"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/all_checked"
+                        android:text=" 女"
+                        >
+
+                        <requestFocus/>
+                    </RadioButton>
+
+
+                    >
+
+                    <requestFocus/>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <!--生日-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="生日"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:id="@+id/et_real_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:hint="扫描后显示"
+                    android:paddingLeft="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+
+
+            </LinearLayout>
+
+
+            <!--户籍地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="户籍地址"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:id="@+id/et_real_dizhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:hint="扫描后显示"
+                    android:paddingLeft="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+
+
+            </LinearLayout>
+
+            <!--发证机关-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="发证机关"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:id="@+id/et_real_gonganju"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:hint="扫描后显示"
+                    android:paddingLeft="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+
+
+            </LinearLayout>
+
+            <!--有效期-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top_bottom"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="有效期"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:id="@+id/et_real_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:hint="扫描后显示"
+                    android:paddingLeft="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_me_real_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_hight"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_background_button"
+            android:text="提交审核"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"/>
+    </LinearLayout>
+</LinearLayout>

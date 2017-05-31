@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rl_title_top_house"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/background_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_house_sweep"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"
+            android:src="@mipmap/er_weima"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_title_house"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="@color/background_color"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_house_title_text"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="我的房屋"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_03"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="8dp"
+                android:src="@mipmap/xiala"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_house_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+
+            android:padding="12dp"
+            android:src="@mipmap/add"/>
+
+    </LinearLayout>
+    <!-- 横线-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/black1"/>
+
+</LinearLayout>

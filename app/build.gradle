@@ -1,0 +1,77 @@
+//plugins {//引入的lambda表达式
+//    id "me.tatarka.retrolambda" version "3.2.5"
+//}
+
+
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.fangku.fyz"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName '0.0.3'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+    productFlavors {
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+//        task clean(type: Exec) {//有时候clen删除不了一些文件  加入这段可以
+//            ext.lockhunter = '\"C:\\Program Files\\LockHunter\\LockHunter.exe\\"'
+//        def buildDir = file(new File("build"))
+//        commandLine 'cmd', "$lockhunter", '/delete', '/silent', buildDir
+//    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile project(':commonlibrary')
+    //友盟统计
+    compile files('libs/umeng-analytics-v6.0.1.jar')
+    compile files('libs/utdid4all-1.0.4.jar')
+    //个推的东西
+    compile files('libs/GetuiSDK2.9.0.0.jar')
+//    compile 'com.android.support:support-v4:23.4.0'
+    //        shareSDK的东西
+    compile files('libs/MobCommons-2016.0816.1507.jar')
+    compile files('libs/MobTools-2016.0816.1507.jar')
+    compile files('libs/ShareSDK-Core-2.7.6.jar')
+    compile files('libs/ShareSDK-QQ-2.7.6.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.7.6.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.6.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.6.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.6.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.6.jar')
+    //二维码扫描
+    compile project(':libzxing')
+    //引导界面的包
+    compile files('libs/nineoldandroids-2.4.0.jar')
+}

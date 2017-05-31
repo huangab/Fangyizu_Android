@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/selector_top_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="房型"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_small">
+
+                    <EditText
+                        android:id="@+id/et_home_woNums"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:maxLength="6"
+                        android:selectAllOnFocus="true"
+                        android:text="1"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_04">
+
+                        <requestFocus />
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="卧"
+                        android:textColor="@color/all_text_color" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/padding_small"
+                        android:background="@color/lightgray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_small">
+
+                    <EditText
+                        android:id="@+id/et_home_tingNums"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:maxLength="6"
+                        android:selectAllOnFocus="true"
+                        android:text="0"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_04">
+
+                        <requestFocus />
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="厅"
+                        android:textColor="@color/all_text_color" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/padding_small"
+                        android:background="@color/lightgray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_small">
+
+                    <EditText
+                        android:id="@+id/et_home_weiNums"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:maxLength="6"
+                        android:selectAllOnFocus="true"
+                        android:text="0"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_04">
+
+                        <requestFocus />
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="卫"
+                        android:textColor="@color/all_text_color" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/selector_top_white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="押付"
+                        android:textColor="@color/all_text_color"
+                        android:textSize="@dimen/text_04" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="押"
+                        android:textColor="@color/all_text_color" />
+
+                    <EditText
+                        android:id="@+id/et_home_yaNums"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890."
+                        android:maxLength="6"
+                        android:selectAllOnFocus="true"
+                        android:text="1"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_04">
+
+                        <requestFocus />
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_small">
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/padding_small"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_middle"
+                        android:layout_marginRight="@dimen/padding_small"
+                        android:text="付"
+                        android:textColor="@color/all_text_color" />
+
+                    <EditText
+                        android:id="@+id/et_home_fuNums"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890."
+                        android:maxLength="6"
+                        android:selectAllOnFocus="true"
+                        android:text="1"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_04">
+
+                        <requestFocus />
+                    </EditText>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_homerelease_set_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/selector_top_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="可入住时间"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04" />
+
+                <TextView
+                    android:id="@+id/tv_home_czTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="幸福公寓"
+                    android:textColor="@color/all_text_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/me_big_go" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="描述"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04" />
+
+                <EditText
+                    android:id="@+id/et_home_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/fillet_white2"
+                    android:hint="点击可输入备注"
+                    android:padding="5dp">
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_middle"
+                android:text="上传图片"
+                android:textColor="@color/all_text_color"
+                android:textSize="@dimen/text_04" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_homerelease_add_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_homerelease_add"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/tianjia_icon" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:id="@+id/rl_Home_peitao"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top_bottom"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="配套"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04" />
+
+                <ProgressBar
+                    android:id="@+id/pb_hoomrelease"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/padding_small"
+                    android:layout_toLeftOf="@+id/iv_Home_shanjiao"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_Home_shanjiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/padding_middle"
+                    android:clickable="false"
+                    android:src="@mipmap/xiala_gray_icon" />
+            </RelativeLayout>
+
+            <com.fangku.commonlibrary.widget.NoScrollGridView
+                android:id="@+id/nsgv_house_peitao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="5"
+                android:visibility="gone">
+
+            </com.fangku.commonlibrary.widget.NoScrollGridView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_Home_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_background_button"
+        android:text="新建"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_size" />
+</LinearLayout>

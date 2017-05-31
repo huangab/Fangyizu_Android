@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <!-- 客服-->
+    <LinearLayout
+
+        android:id="@+id/ll_contact_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hight"
+        android:background="@drawable/selector_top_bottom_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/help_kefu"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="客服"
+            android:textColor="@color/all_text_color"
+            android:textSize="@dimen/text_04"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/me_small_go"/>
+
+    </LinearLayout
+        >
+
+    <!--QQ -->
+    <LinearLayout
+
+        android:id="@+id/ll_contact_qq"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hight"
+        android:background="@drawable/selector_top_bottom_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/help_qq"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="QQ"
+            android:textColor="@color/all_text_color"
+            android:textSize="@dimen/text_04"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/me_small_go"/>
+
+    </LinearLayout
+        >
+
+    <!--微信 -->
+    <LinearLayout
+
+        android:id="@+id/ll_contact_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hight"
+        android:background="@drawable/selector_top_bottom_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/help_weixin"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="微信"
+            android:textColor="@color/all_text_color"
+            android:textSize="@dimen/text_04"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/me_small_go"/>
+
+    </LinearLayout
+        >
+
+    <!--联系电话 -->
+    <LinearLayout
+
+        android:id="@+id/ll_contact_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_hight"
+        android:background="@drawable/selector_top_bottom_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/help_boda"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="点击拨打联系电话:123456789"
+            android:textColor="@color/all_text_color"
+            android:textSize="@dimen/text_04"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/me_small_go"/>
+
+    </LinearLayout
+        >
+</LinearLayout>

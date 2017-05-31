@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <ScrollView
+        android:id="@+id/sc_fangjianxinxi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--显示楼号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="所属房产:"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <TextView
+                    android:id="@+id/tv_fangjianxinxi_house_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="系统错误"
+                    android:textColor="@color/lightgray"
+                    android:textSize="@dimen/text_03"/>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_hight"
+                android:layout_weight="1"
+                android:background="@drawable/top"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="房间名*"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04"/>
+
+                <EditText
+                    android:paddingLeft="10dp"
+                    android:id="@+id/et_fangjianxinxi_room_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="房型*"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <EditText
+                            android:id="@+id/et_fangjianxinxi_woshi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:selectAllOnFocus="true"
+                            android:text="0"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/text_04">
+
+
+                        </EditText>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="卧"
+                            android:textColor="@color/all_text_color"/>
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="13dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="13dp"
+
+                            android:background="@color/lightgray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <EditText
+                            android:id="@+id/et_fangjianxinxi_ting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:selectAllOnFocus="true"
+                            android:text="0"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/text_04">
+
+
+                        </EditText>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="厅"
+                            android:textColor="@color/all_text_color"/>
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="13dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="13dp"
+                            android:background="@color/lightgray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <EditText
+                            android:id="@+id/et_fangjianxinxi_weishengjian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:selectAllOnFocus="true"
+                            android:text="0"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/text_04">
+
+
+                        </EditText>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="卫"
+                            android:textColor="@color/all_text_color"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="押付*"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="押"
+                            android:textColor="@color/all_text_color"/>
+
+                        <EditText
+                            android:id="@+id/et_fangjianxinxi_yajinshu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:selectAllOnFocus="true"
+                            android:text="1"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/text_04">
+
+
+                        </EditText>
+
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="13dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="13dp"
+                            android:background="@color/lightgray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="付"
+                            android:textColor="@color/all_text_color"/>
+
+                        <EditText
+                            android:id="@+id/et_fangjianxinxi_fuqianshu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:selectAllOnFocus="true"
+                            android:text="1"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/text_04">
+
+
+                        </EditText>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <!--租期-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top_bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="所在楼层*"
+                        android:textColor="@color/text_light"
+                        android:textSize="@dimen/text_04"/>
+
+                    <EditText
+                        android:id="@+id/et_fangjianxinxi_louceng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:selectAllOnFocus="true"
+                        android:text="1"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_04">
+
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@color/lightgray"/>
+
+                    <TextView
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="楼"
+                        android:textColor="@color/all_text_color"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--租金-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top_bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="租金*"
+                        android:textColor="@color/text_light"
+                        android:textSize="@dimen/text_04"/>
+
+                    <EditText
+                        android:id="@+id/et_fangjianxinxi_zujin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:selectAllOnFocus="true"
+                        android:text="0"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_04">
+
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@color/lightgray"/>
+
+                    <TextView
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="元"
+                        android:textColor="@color/all_text_color"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 白条-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/white"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_feiyong_yincang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--黑线-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/lightgray"/>
+
+
+                <!--其他费用设置-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hight"
+
+                    android:background="@color/activation"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    >
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="其他费用设置"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_04"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_fangjian_add"
+
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:src="@mipmap/add"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_fangjian_delete"
+                        android:layout_width="70dp"
+
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="18dp"
+                            android:src="@mipmap/lajitong"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.fangku.commonlibrary.widget.AllListView
+                    android:id="@+id/lv_fangjianxinxi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/top_bottom"></com.fangku.commonlibrary.widget.AllListView>
+                <!-- 白条-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="15dp">
+
+        <Button
+            android:id="@+id/bt_fangjianxinxi_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_hight"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_background_button"
+            android:text="点击修改"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"/>
+
+        <Button
+            android:id="@+id/bt_fangjianxinxi_lishiheyue"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/button_hight"
+            android:background="@drawable/selector_background_button"
+            android:text="历史合约"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_fangjianxinxi_delete_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_hight"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/bt_fangjianxinxi_delete"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_red_button"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_size"/>
+
+            <Button
+                android:id="@+id/bt_fangjianxinxi_cancel"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/selector_background_button"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_size"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

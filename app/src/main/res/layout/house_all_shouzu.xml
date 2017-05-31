@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_color"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_big"
+                android:paddingLeft="@dimen/padding_middle"
+                android:paddingRight="@dimen/padding_middle"
+                android:paddingTop="@dimen/padding_big">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合计(元)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_05" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_small"
+                    android:paddingTop="@dimen/padding_small">
+
+                    <TextView
+                        android:id="@+id/tv_house_add_shouzu_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/money_middle" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_middle"
+                android:paddingRight="@dimen/padding_middle"
+                android:paddingTop="@dimen/padding_small">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="实际金额"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04" />
+
+                <EditText
+                    android:id="@+id/et_house_all_shouzu_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_06"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:background="@drawable/top"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_middle">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="费用详情"
+                        android:textSize="@dimen/text_04" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_middle"
+                    android:layout_marginRight="@dimen/padding_middle"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_house_all_shouzu_addcost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="添加费用" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="@dimen/padding_middle"
+                android:paddingRight="@dimen/padding_middle"
+                android:paddingTop="2dp">
+
+                <CheckBox
+                    android:id="@+id/cb_house_all_shouzu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/padding_middle"
+                    android:paddingRight="@dimen/padding_middle"
+                    android:text="8月-9月房租"
+                    android:textSize="@dimen/text_04"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015-08-15"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="-"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015-09-15"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04" />
+
+            </LinearLayout>
+
+
+            <com.fangku.commonlibrary.widget.AllListView
+                android:id="@+id/lv_house_all_tuizhu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/padding_small"
+                android:background="@color/white" />
+
+
+            <EditText
+                android:layout_marginTop="@dimen/padding_small"
+                android:id="@+id/et_house_all_shouzu_remark"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                android:hint="备注"
+                android:paddingLeft="@dimen/padding_middle"
+                android:paddingRight="@dimen/padding_middle" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/top_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <Button
+            android:id="@+id/btn_house_all_shouzu_keep"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_background_button"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+        <Button
+            android:id="@+id/btn_house_all_shouzu_cz"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_background_button"
+            android:text="催租"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+        <Button
+            android:id="@+id/btn_house_all_shouzu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_red_button"
+            android:text="收租"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

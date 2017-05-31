@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_middle"
+        android:paddingRight="@dimen/padding_middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实收金额"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_04" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:selectAllOnFocus="true"
+            android:text="0"
+            android:inputType="number"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_04" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/padding_middle"
+        android:paddingRight="@dimen/padding_middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起始刻度"
+            android:textSize="@dimen/text_04" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:selectAllOnFocus="true"
+            android:text="0"
+            android:inputType="number"
+            android:textSize="@dimen/text_04" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="0.1dp"
+        android:paddingLeft="@dimen/padding_middle"
+        android:paddingRight="@dimen/padding_middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束刻度"
+            android:textSize="@dimen/text_04" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:selectAllOnFocus="true"
+            android:text="0"
+            android:inputType="number"
+            android:textSize="@dimen/text_04" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="0.1dp"
+        android:paddingLeft="@dimen/padding_middle"
+        android:paddingRight="@dimen/padding_middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单价"
+            android:textSize="@dimen/text_04" />
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_middle"
+            android:paddingRight="@dimen/padding_middle"
+            android:background="@null"
+            android:gravity="right"
+            android:selectAllOnFocus="true"
+            android:text="0"
+            android:inputType="number"
+            android:textSize="@dimen/text_04" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="40dp"
+            android:background="@color/lightgray"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_middle"
+            android:paddingRight="@dimen/padding_middle"
+            android:text="元/月" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/padding_middle"
+        android:paddingRight="@dimen/padding_middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="近期抄表记录"
+            android:textSize="@dimen/text_04" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_margin="@dimen/padding_big"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_04"
+        android:background="@drawable/selector_background_button"
+        />
+
+</LinearLayout>

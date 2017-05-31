@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--二级菜单list的item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_item_yichuzu_room_num"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:text="房间名"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_04"/>
+
+        <ImageView
+            android:id="@+id/iv_item_yishouzu_weixin"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@mipmap/weixin"/>
+
+        <TextView
+            android:id="@+id/tv_item_yichuzu_name"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_04"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_yichuzu_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="888.0"
+            android:textColor="@color/all_text_color"
+            android:textSize="@dimen/text_04"/>
+
+
+        <ImageView
+            android:id="@+id/iv_item_all_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/selector_expandable_right"/>
+
+    </LinearLayout>
+
+</LinearLayout>

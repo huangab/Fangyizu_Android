@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_hydropower"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@color/background_color"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/view_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 单位:元"
+                android:textColor="@color/white"/>
+
+            <com.fangku.fyz.widget.PieChartView
+
+                android:id="@+id/pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                app:circleRadius="100dp"
+                app:textSize="13sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/riv_round"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@color/background_color"
+                        app:riv_oval="true"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="本月收入:"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9998元"
+                            android:textColor="@color/text_light"
+                            android:textSize="@dimen/text_02"/>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <!-- 底部栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/top"
+        android:orientation="horizontal">
+
+        <!-- 第一个 按钮 -->
+
+        <LinearLayout
+            android:id="@+id/ll_tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/iv_house_tab"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:clickable="false"
+                android:src="@mipmap/bank_bjrcb"/>
+
+            <TextView
+                android:id="@+id/tv_house_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="一折网"
+                android:textColor="@color/no_activation"
+                android:textSize="@dimen/text_05"/>
+        </LinearLayout>
+
+        <!-- 第一个 按钮 -->
+
+        <LinearLayout
+            android:id="@+id/ll_tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/iv_house_tab2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:clickable="false"
+                android:src="@mipmap/bank_urmqccb"/>
+
+            <TextView
+                android:id="@+id/tv_house_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="余额宝"
+                android:textColor="@color/no_activation"
+                android:textSize="@dimen/text_05"/>
+        </LinearLayout>
+        <!-- 第一个 按钮 -->
+
+        <LinearLayout
+            android:id="@+id/ll_tab3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/iv_house_tab3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:clickable="false"
+                android:src="@mipmap/bank_xtb"/>
+
+            <TextView
+                android:id="@+id/tv_house_tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="人寿保险"
+                android:textColor="@color/no_activation"
+                android:textSize="@dimen/text_05"/>
+        </LinearLayout>
+        <!-- 第一个 按钮 -->
+
+        <LinearLayout
+            android:id="@+id/ll_tab4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/iv_house_tab4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:clickable="false"
+                android:src="@mipmap/bank_tzcb"/>
+
+            <TextView
+                android:id="@+id/tv_house_tab4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="月月折扣"
+                android:textColor="@color/no_activation"
+                android:textSize="@dimen/text_05"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

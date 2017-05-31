@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_feiyong_check_father"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/rb_AddMoney_list"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/all_checked"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false">
+
+                <requestFocus/>
+            </CheckBox>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_money_name_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:text="水表"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/ll_danjia"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:background="@drawable/orange_text_bottom"
+                android:enabled="false"
+                android:id="@+id/et_money_DanWeiNums_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:clickable="false"
+
+                android:maxLength="10"
+
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_04">
+
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/tv_money_DanWei_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="元/方"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_addmoney_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:gravity="center"
+                android:clickable="true"
+                android:id="@+id/ll_min"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="@drawable/orange_text_bottom"
+                    android:enabled="false"
+                    android:id="@+id/et_money_MinNums_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:clickable="false"
+
+
+                    android:maxLength="10"
+                    android:text="0"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_04">
+
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tc_money_Min_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最低值"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_money_list_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/delete_red"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

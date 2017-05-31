@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/title"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@color/activation"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="费用类型选择"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_03"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/background_color"/>
+
+            <com.fangku.commonlibrary.widget.NoScrollGridView
+                android:id="@+id/ngv_money_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whitesmoke"
+                android:numColumns="4"
+                android:padding="@dimen/padding_small">
+
+            </com.fangku.commonlibrary.widget.NoScrollGridView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名称*"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04"/>
+
+                <EditText
+                    android:id="@+id/et_addMoney_Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_small"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:hint="请输入名称"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top_bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="单价"
+                        android:textSize="@dimen/text_04"/>
+
+                    <EditText
+
+                        android:id="@+id/et_addMoney_yajing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="必须是数字"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/text_light"
+                        android:textSize="@dimen/text_04">
+
+                        <requestFocus/>
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_small">
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightgray">
+
+                        <requestFocus/>
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_addMoney_yajingDanwei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_middle"
+                        android:layout_marginRight="@dimen/padding_small"
+                        android:text="元/度"
+                        android:textColor="@color/background_color"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_add_money_bottomll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hight"
+                    android:layout_marginTop="@dimen/padding_middle"
+                    android:background="@drawable/top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="单位"/>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:button="@drawable/all_checked"
+                            android:paddingRight="5dp"
+                            android:text=" 度"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:button="@drawable/all_checked"
+                            android:paddingRight="5dp"
+                            android:text=" 吨"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:button="@drawable/all_checked"
+                            android:text=" 立方"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hight"
+                    android:layout_marginTop="@dimen/padding_middle"
+                    android:background="@drawable/top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="最大值"/>
+
+                    <EditText
+                        android:id="@+id/et_addMoney_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:paddingRight="10dp"
+                        android:selectAllOnFocus="true"
+                        android:text="0"
+                        android:textColor="@color/text_light">
+
+                        <requestFocus/>
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_hight"
+                    android:background="@drawable/top_bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="最小值"/>
+
+                    <EditText
+                        android:id="@+id/et_addMoney_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:selectAllOnFocus="true"
+                        android:text="0"
+                        android:textColor="@color/text_light">
+
+                        <requestFocus/>
+                    </EditText>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/top_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_addMoney_OK"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/selector_background_button"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"/>
+
+    </LinearLayout>
+</LinearLayout>

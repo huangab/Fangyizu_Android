@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <ScrollView
+        android:id="@+id/sc_heyue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--起租日期-->
+            <LinearLayout
+                android:id="@+id/ll_heyue_qizuriqi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_top_bottom_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起租日期*"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04"/>
+
+                <TextView
+                    android:id="@+id/tv_heyue_qizuriqi"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="20dp"
+                    android:text="1980-1-14"
+                    android:textColor="@color/all_text_color"/>
+
+
+            </LinearLayout>
+
+            <!--租期-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="租期*(输入可快速计算)"
+                        android:textColor="@color/text_light"
+                        android:textSize="@dimen/text_04"/>
+
+                    <EditText
+                        android:id="@+id/et_heyue_zuqi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingRight="5dp"
+                        android:selectAllOnFocus="true"
+                        android:text="12"
+                        android:textSize="@dimen/text_04">
+
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/padding_small"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_small">
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightgray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_middle"
+                        android:layout_marginRight="@dimen/padding_small"
+                        android:text="个月"
+                        android:textColor="@color/all_text_color"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--结束日期-->
+            <LinearLayout
+                android:id="@+id/ll_heyue_jiesuriqi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_top_bottom_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束日期*"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04"/>
+
+                <TextView
+                    android:id="@+id/tv_heyue_jiesuriqi"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="20dp"
+                    android:text="1980-1-14"
+                    android:textColor="@color/all_text_color"/>
+
+
+            </LinearLayout>
+            <!-- 白条-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/white"></LinearLayout>
+
+
+            <!--黑线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/background_color"/>
+
+            <!--其他费用设置-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/activation"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="其他费用设置"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_04"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_heyue_add"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/add"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_heyue_delete"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="18dp"
+                        android:src="@mipmap/lajitong"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--黑线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/lightgray"/>
+
+
+            <com.fangku.commonlibrary.widget.AllListView
+                android:id="@+id/lv_qitfeiyong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_bottom">
+
+            </com.fangku.commonlibrary.widget.AllListView>
+            <!--黑线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/lightgray"/>
+            <!-- 白条-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"></LinearLayout>
+
+
+            <!--收费周期-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="收费周期"
+                    android:textColor="@color/background_color"
+                    android:textSize="@dimen/text_04"/>
+
+
+            </RelativeLayout>
+
+            <!--租金-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="租金*"
+                        android:textColor="@color/text_light"
+                        android:textSize="@dimen/text_04"/>
+
+                    <EditText
+                        android:id="@+id/et_heyue_zujin"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingRight="5dp"
+                        android:selectAllOnFocus="true"
+                        android:text="1"
+                        android:textSize="@dimen/text_04">
+
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_small">
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightgray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_middle"
+                        android:layout_marginRight="@dimen/padding_middle"
+                        android:text="月/次"
+                        android:textColor="@color/all_text_color"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--其他费用-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="其他费用*"
+                        android:textColor="@color/text_light"
+                        android:textSize="@dimen/text_04"/>
+
+                    <EditText
+                        android:id="@+id/et_heyue_qitafeiyong"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingRight="5dp"
+                        android:selectAllOnFocus="true"
+                        android:text="1"
+                        android:textSize="@dimen/text_04">
+
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_small">
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightgray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_middle"
+                        android:layout_marginRight="@dimen/padding_middle"
+                        android:text="月/次"
+                        android:textColor="@color/all_text_color"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--抄表提醒-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/top_bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="抄表提醒*"
+                        android:textColor="@color/text_light"
+                        android:textSize="@dimen/text_04"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <EditText
+                            android:id="@+id/et_heyue_chaobiaotixing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right|center_vertical"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:paddingRight="5dp"
+                            android:selectAllOnFocus="true"
+                            android:text="3"
+                            android:textSize="@dimen/text_04">
+
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_small">
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightgray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_middle"
+                        android:layout_marginRight="@dimen/padding_middle"
+                        android:gravity="center"
+                        android:text="天      "
+                        android:textColor="@color/all_text_color"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 白条-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"></LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/top_bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_heyue2_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_background_button"
+            android:text="出租"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"/>
+
+
+        <Button
+            android:id="@+id/bt_heyue2_delete"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_red_button"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/bt_heyue2_cancel"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_background_button"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_all_addcost_type"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_alignParentBottom="true">
+
+    <ListView
+        android:id="@+id/lv_dialog_all_addcost_type_daClass"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/wheat"
+        android:layout_height="200dp"/>
+    <ListView
+        android:id="@+id/lv_dialog_all_addcost_type_xiaoClass"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_height="200dp"/>
+</LinearLayout>

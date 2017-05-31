@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_dialog_hydropower_watch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/fillet_white_only"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="换表"
+        android:textSize="@dimen/text_01"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="@dimen/text_04"
+            android:textColor="@color/all_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旧表"/>
+
+        <EditText
+            android:id="@+id/et_dialog_hydropower_watch_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"
+            android:numeric="decimal"
+            android:singleLine="true">
+
+            <requestFocus/>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="@dimen/text_04"
+            android:textColor="@color/all_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新表"/>
+
+        <EditText
+            android:id="@+id/et_dialog_hydropower_watch_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"
+            android:numeric="decimal"
+            android:singleLine="true">
+
+            <requestFocus/>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_dialog_hydropower_watch_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_background_button"
+            android:text="确定"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_dialog_hydropower_watch_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_background_button"
+            android:text="取消"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

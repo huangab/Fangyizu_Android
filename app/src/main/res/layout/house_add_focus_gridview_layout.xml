@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_zhoubian"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iv_focus_Zoubian_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <CheckBox
+                android:id="@+id/ck_zhoubian"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/zhoubian_checked_button"
+                android:button="@null"
+                android:enabled="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_focus_Zoubian_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_small"
+            android:gravity="center"
+            android:text="阳台" />
+    </LinearLayout>
+
+</LinearLayout>

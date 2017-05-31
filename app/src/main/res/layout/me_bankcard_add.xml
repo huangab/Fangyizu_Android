@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--点击扫描身份证 -->
+            <LinearLayout
+                android:id="@+id/ll_contact_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_top_bottom_white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="可在收租、购物时，支付或收款"
+
+                    android:textSize="@dimen/text_04"/>
+
+
+            </LinearLayout
+                >
+
+
+            <!--身份证卡号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="所属银行*"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <TextView
+                    android:id="@+id/tv_bank_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="输入卡号之后自动识别"
+                    android:maxLength="11"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04"
+                    />
+
+
+            </LinearLayout>
+
+            <!--银行卡号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="银行卡号*"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:id="@+id/et_bank_cardnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入卡号"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLength="19"
+                    android:paddingRight="10dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+
+
+            </LinearLayout>
+
+            <!--持卡人-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="持卡人*"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:background="@null"
+                    android:id="@+id/et_bank_card_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入持卡人姓名"
+                    android:paddingRight="10dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+
+
+            </LinearLayout>
+
+            <!--预留手机号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top_bottom"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="预留手机号*"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:background="@null"
+                    android:id="@+id/et_bank_card_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入预留手机号"
+                    android:maxLength="11"
+                    android:paddingRight="10dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+
+
+            </LinearLayout>
+
+            <!--收租自动化服务-->
+            <LinearLayout
+                android:id="@+id/ll_aotu_service"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/selector_top_bottom_white"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="收租自动化服务"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_backcard_state"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:enabled="false"
+                    android:textColor="@drawable/custom_text_state_color"
+                    android:textSize="16dp"
+                    app:kswTextOff="Off"
+                    app:kswTextOn="On"
+                    app:kswTintColor="@color/button_color"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/expandablelist_cb_allselect"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/all_checked"
+                    android:button="@null"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:text="我已经仔细阅读并同意《天天房易租第三方平台支付绑定协议》"
+                    android:textColor="@color/all_text_color"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top">
+
+        <Button
+            android:id="@+id/bt_add_bankcard_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_hight"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_background_button"
+            android:text="确认添加"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"/>
+    </LinearLayout>
+
+</LinearLayout>

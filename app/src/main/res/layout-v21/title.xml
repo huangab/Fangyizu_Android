@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+    android:id="@+id/rl_title_top"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/background_color">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="显示标题"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_02"/>
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:drawableLeft="@mipmap/title_back2"
+                android:paddingLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/iv_title_right"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/tv_title"
+                android:layout_toRightOf="@+id/tv_title"
+                android:src="@mipmap/xiala"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_title_right"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="内容"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_04"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_right_xiala"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignEnd="@+id/tv_title_right"
+                android:layout_alignRight="@+id/tv_title_right"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/xiala"
+                android:visibility="gone"/>
+
+            <!-- 右边的大图片按钮-->
+
+
+            <ImageView
+                android:id="@+id/iv_right_big_image"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@mipmap/more"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <!-- 横线-->
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/black1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<manifest
+    package="com.fangku.commonlibrary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!--往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <!-- 声明glide  -->
+        <meta-data
+            android:name="com.fangku.commonlibrary.utils.imageutil.imageGlideModule"
+            android:value="GlideModule"/>
+
+
+    </application>
+
+
+</manifest>

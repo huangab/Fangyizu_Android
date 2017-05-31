@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/top_bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="@dimen/padding_small"
+                android:src="@mipmap/sousuoliang_01"/>
+
+            <EditText
+                android:id="@+id/et_Select_Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_middle"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="小区、街道"
+                android:singleLine="true">
+
+                <requestFocus/>
+            </EditText>
+
+            <ImageView
+                android:id="@+id/im_clear_et"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="@dimen/padding_middle"
+                android:padding="@dimen/padding_small"
+                android:src="@mipmap/dachahui01"/>
+
+            <LinearLayout
+                android:id="@+id/ll_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_middle"
+                    android:layout_marginRight="@dimen/padding_middle"
+                    android:text="搜索"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lv_house_add_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_focus_clearAddress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_background_button"
+        android:text="清空历史搜索"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_size"/>
+</LinearLayout>

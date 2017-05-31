@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_bank_background"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@mipmap/bank_back_red"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/im_me_BankCard_BankLog"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@mipmap/bank_icon_background"
+            android:src="@mipmap/bank_boc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/tv_me_BankCard_BankName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中国建设银行"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_03"/>
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/kuaijiezhifu"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_04"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_me_BankCard_CardClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="储蓄卡"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_03"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_me_BankCard_CardNums"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:text="**** **** **** "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_02"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

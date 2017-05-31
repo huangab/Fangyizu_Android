@@ -1,0 +1,91 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dim_foreground_disabled_material_dark"/>
+
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        >
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/circles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/welcome_selectable_item_background_general"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/start_action_next"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_welcome_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="进入"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

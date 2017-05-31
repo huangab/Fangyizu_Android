@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_house"/>
+
+    <TextView
+        android:id="@+id/tv_house_message"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff79f"
+        android:gravity="center"
+        android:text="您有一条新的系统消息"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/text_05"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="#F0E083"/>
+
+    <LinearLayout
+        android:id="@+id/ll_house_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部房间"
+            android:textColor="@color/all_text_color"
+            android:textSize="@dimen/text_05"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_house_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="6dp"
+            android:text=" "
+            android:textColor="@color/all_text_color"
+            android:textSize="@dimen/text_05"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/me_big_go"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/ll_house_nopay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_house_left"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginRight="7dp"
+                        android:src="@mipmap/house_money_light"/>
+
+                    <TextView
+                        android:id="@+id/tv_house_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未交租(0)"
+                        android:textColor="@color/activation"
+                        android:textSize="@dimen/text_02"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_house_nopay_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="11dp"
+                        android:text="(125)"
+                        android:textColor="@color/activation"
+                        android:textSize="@dimen/text_03"/>
+
+                    <TextView
+                        android:id="@+id/tv_house_nopay_jian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="间"
+                        android:textColor="@color/activation"
+                        android:textSize="@dimen/text_03"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_house_left"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/activation"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgray"/>
+
+        <RelativeLayout
+            android:id="@+id/ll_house_nohire"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_house_right"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginRight="7dp"
+                        android:src="@mipmap/house_house_dark"/>
+
+                    <TextView
+                        android:id="@+id/tv_house_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未出租(0)"
+                        android:textColor="@color/no_activation"
+                        android:textSize="@dimen/text_02"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_house_nohire_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="13dp"
+                        android:text="(88)"
+                        android:textColor="@color/no_activation"
+                        android:textSize="@dimen/text_03"/>
+
+                    <TextView
+                        android:id="@+id/tv_house_nohire_jian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="间"
+                        android:textColor="@color/no_activation"
+                        android:textSize="@dimen/text_03"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_house_right"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/no_activation"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lightgray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f9f9f9"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitesmoke">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_house_not_room"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="查询不到房间ヾ(o◕∀◕)ﾉヾ"
+                android:textColor="@color/lightgray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <com.liaoinstan.springview.widget.SpringView
+                android:id="@+id/lv_house_sv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <ListView
+                    android:id="@+id/lv_house_ListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_bottom"
+                    ></ListView>
+
+
+            </com.liaoinstan.springview.widget.SpringView>
+        </LinearLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

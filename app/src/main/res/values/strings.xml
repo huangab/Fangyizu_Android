@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">fyz</string>
+    <string name="name">房易租</string>
+
+    <string name="version">V 0.0.3</string>
+
+
+    <string name="system_exit">是否退出房易租?</string>
+
+
+
+
+    <!--引导界面的内容开始-->
+    <string name="welcom_head_01">欢迎使用房易租(房东版)</string>
+    <string name="welcom_content_01">在这里,您可以轻松的管理您的房产.</string>
+    <string name="welcom_head_02">易于阅读的表单界面</string>
+    <string name="welcom_content_02">实时查看名下房产的各种状态.</string>
+    <string name="welcom_head_03">互联网+模式</string>
+    <string name="welcom_content_03">在家里就可方便的实现网上收租,拟定电子合同.</string>
+    <string name="welcom_head_04">告别手工时代</string>
+    <string name="welcom_content_04">房易租提供各种强大简便功能,使您心情更愉快.</string>
+    <!--引导界面的内容结束-->
+
+    <string name="will_dopost_onFailed">网络连接失败</string>
+
+
+
+
+
+
+
+
+</resources>

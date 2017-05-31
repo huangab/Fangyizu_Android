@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/title" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/padding_middle"
+                    android:text="出租方式"
+                    android:textSize="@dimen/text_04" />
+
+                <RadioGroup
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/padding_middle"
+                    android:orientation="horizontal"
+
+                    android:padding="1px">
+
+                    <RadioButton
+                        android:id="@+id/rb_button_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_blue_radiobutton_left"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="合租"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/rb_button_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_blue_radiobutton_left"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="整租"
+                        android:textColor="@color/background_color" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dispersed_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/selector_top_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详细地址"
+                    android:textSize="@dimen/text_04" />
+
+                <TextView
+                    android:id="@+id/tv_address_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="如,小区、街道、村  "
+                    android:textColor="@color/background_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/me_big_go" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top_bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="区域"
+                    android:textSize="@dimen/text_04" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="省市区  "
+                    android:textColor="@color/background_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/me_big_go" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="楼名"
+                    android:textSize="@dimen/text_04" />
+
+                <EditText
+                    android:id="@+id/et_dispersed_nameHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="如,平安公寓"
+                    android:paddingRight="25dp"
+                    android:selectAllOnFocus="true"
+                    android:textSize="@dimen/text_05">
+
+                    <requestFocus />
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dispersed_set_room_num"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top_bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="房间数"
+                    android:textSize="@dimen/text_04" />
+
+                <TextView
+                    android:id="@+id/tv_dispersed_rooms_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="可供出租的房间的数量  "
+                    android:textColor="@color/background_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/me_big_go" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_dispersed_ZuoBianPeiTao"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/top_bottom"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="周边配套" />
+
+                <ProgressBar
+                    android:id="@+id/pb_dispersed"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/padding_small"
+                    android:layout_toLeftOf="@+id/iv_dispersed_shanjiao"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_dispersed_shanjiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"
+                    android:src="@mipmap/xiala_gray_icon" />
+            </RelativeLayout>
+
+            <com.fangku.commonlibrary.widget.NoScrollGridView
+                android:id="@+id/nsgv_dispersed_zoubian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="5"
+                android:visibility="gone">
+
+            </com.fangku.commonlibrary.widget.NoScrollGridView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bottom"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_middle">
+
+        <Button
+            android:id="@+id/bt_dispersed_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_background_button"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="点击图片可更换头像"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_reg_head_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/select_touxiang"
+            app:riv_border_color="#00000000"
+            />
+        <!--app:riv_border_color="#008B8B"-->
+        <!--app:riv_border_width="2dp"-->
+        <!--app:riv_corner_radius="20dip"-->
+        <!--app:riv_mutate_background="true"-->
+        <!--app:riv_oval="true"-->
+        <!--app:riv_tile_mode="repeat"-->
+
+
+        <!--注册手机号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="手机号"
+                android:textSize="@dimen/text_04"/>
+
+
+            <EditText
+                android:id="@+id/et_reg_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="11位手机号(必填)"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="5dp"
+
+                android:singleLine="true"
+                android:textSize="@dimen/text_04"
+                android:selectAllOnFocus="true">
+
+                <requestFocus/>
+            </EditText>
+
+
+        </LinearLayout>
+
+        <!-- 横线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:background="@color/lightgray"/>
+
+
+        <!--密码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="密   码"
+                android:textSize="@dimen/text_04"/>
+
+
+            <EditText
+                android:id="@+id/et_reg_pwd_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="0123456789zxcvbnmasdfghjklqwertyuiopZXCVBNMASDFGHJKLQWERTYUIOP!@#$,./%^*_-"
+                android:hint="长度8-20(必填)"
+                android:paddingLeft="5dp"
+                android:password="true"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textSize="@dimen/text_04">
+
+                <requestFocus/>
+            </EditText>
+
+            <!--明文按钮  -->
+            <LinearLayout
+                android:id="@+id/ll_register_check"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_register_check"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/light_pwd_selector"
+                    android:button="@null"
+                    android:clickable="false"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 横线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:background="@color/lightgray"/>
+        <!--推荐码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="推荐码"
+                android:textSize="@dimen/text_04"/>
+
+
+            <EditText
+                android:id="@+id/et_reg_user_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="请输入推荐人手机号(选填)"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textSize="@dimen/text_04">
+
+                <requestFocus/>
+            </EditText>
+
+
+        </LinearLayout>
+        <!-- 横线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/lightgray"/>
+
+        <Button
+            android:id="@+id/bt_reg_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_hight"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_background_button"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

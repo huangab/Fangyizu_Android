@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_select_head"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/selector_top_bottom_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="头像"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_me_information_image"
+                    android:layout_width="92dp"
+                    android:layout_height="67dp"
+                    android:src="@mipmap/fyz_logo"
+                    app:riv_border_color="#00000000"
+                    app:riv_border_width="1dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true"
+                    app:riv_tile_mode="repeat"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                android:paddingLeft="20dp"
+                >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="手机号码"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:id="@+id/tv_me_information_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="20dp"
+                    android:selectAllOnFocus="true"
+                    android:text="10086"
+                    android:textColor="@color/lightgray"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="昵称"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:id="@+id/et_me_information_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入昵称"
+                    android:paddingRight="20dp"
+
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="位置"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:id="@+id/et_me_information_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="20dp"
+                    android:selectAllOnFocus="true"
+                    android:text="厦门"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_hight"
+                android:background="@drawable/top_bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="电子邮箱"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="@dimen/text_04"/>
+
+
+                <EditText
+                    android:id="@+id/et_me_information_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入邮箱(可不填)"
+                    android:inputType="textEmailAddress"
+                    android:paddingRight="20dp"
+                    android:selectAllOnFocus="true"
+                    android:textSize="@dimen/text_04">
+
+                    <requestFocus/>
+                </EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top">
+
+        <Button
+            android:id="@+id/bt_information_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_hight"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_background_button"
+            android:text="确认修改"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"/>
+
+    </LinearLayout>
+
+</LinearLayout>

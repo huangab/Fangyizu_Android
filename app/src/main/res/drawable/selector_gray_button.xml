@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--简单的蓝色变换-->
+    <item android:drawable="@drawable/fillet_gray_dark"
+          android:state_pressed="true"></item>
+
+    <item android:drawable="@drawable/fillet_gray"></item>
+
+</selector>

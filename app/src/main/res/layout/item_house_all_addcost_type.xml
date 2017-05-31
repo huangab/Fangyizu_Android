@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_house_all_addcost_type"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:paddingLeft="@dimen/padding_middle"
+    android:paddingRight="@dimen/padding_middle">
+
+    <TextView
+        android:id="@+id/tv_item_house_all_addcost_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_04"
+        android:text="类型"/>
+
+    <ImageView
+        android:id="@+id/iv_item_house_all_addcost_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/me_big_go"
+        android:visibility="gone"/>
+</RelativeLayout>

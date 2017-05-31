@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_dialog_add_house"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fillet_white_only"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="        房产管理"
+                android:textColor="@color/background_color"
+                android:textSize="@dimen/text_03"/>
+
+            <TextView
+                android:id="@+id/tv_dialog_addhouse_quit"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:drawableLeft="@mipmap/delete"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:textSize="@dimen/text_05"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dialog_add_house_weihu"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_top_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/add_weihu"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="维护房产"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_04"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="  维护已有的楼房或套房"
+                    android:textColor="@color/lightgray"
+                    android:textSize="@dimen/text_05"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/me_small_go"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dialog_add_house_concentrate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_top_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/add_jizhong"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加集中式房产"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_04"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="  适用整栋楼房管理"
+                    android:textColor="@color/lightgray"
+                    android:textSize="@dimen/text_05"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/me_small_go"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_dialog_add_house_disperse"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_top_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/add_fensan"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="添加分散式房产"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_04"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="  适用小区单套放间、分散式房源"
+                    android:textColor="@color/lightgray"
+                    android:textSize="@dimen/text_05"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/me_small_go"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_dialog_add_house_2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/selector_top_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/add_tianjia"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加房间"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_04"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="  在已有的楼房或套房内添加房间"
+                    android:textColor="@color/lightgray"
+                    android:textSize="@dimen/text_05"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/me_small_go"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

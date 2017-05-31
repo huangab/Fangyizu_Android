@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_setting_message_get"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:background="@drawable/selector_top_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/me_setting"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="消息通知"
+                android:textColor="@color/all_text_color"
+                android:textSize="@dimen/text_04"/>
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sb_text_state"
+                style="@style/SwitchButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textColor="@drawable/custom_text_state_color"
+                android:textSize="16dp"
+                app:kswTextOff="Off"
+                app:kswTextOn="On"
+                app:kswTintColor="@color/button_color"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting_clean"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:background="@drawable/selector_top_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/me_setting"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="清除缓存"
+                android:textColor="@color/all_text_color"
+                android:textSize="@dimen/text_04"/>
+
+            <TextView
+                android:id="@+id/tv_cacheSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="0MB"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/me_small_go"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting_tell_me"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:background="@drawable/selector_top_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/me_setting"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="意见反馈"
+                android:textColor="@color/all_text_color"
+                android:textSize="@dimen/text_04"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/me_small_go"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting_the_fangyizu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:background="@drawable/selector_top_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/me_setting"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="关于房易租"
+                android:textColor="@color/all_text_color"
+                android:textSize="@dimen/text_04"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/me_small_go"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting_password_change"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_hight"
+            android:background="@drawable/selector_top_bottom_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/me_setting"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="密码修改"
+                android:textColor="@color/all_text_color"
+                android:textSize="@dimen/text_04"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/me_small_go"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bt_quit_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_hight"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/selector_red_button"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"/>
+    </RelativeLayout>
+</LinearLayout>

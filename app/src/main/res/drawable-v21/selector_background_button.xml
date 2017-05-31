@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="@color/button_color_pressed">
+    <item>
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <!--简单的蓝色变换-->
+            <item
+                android:drawable="@drawable/fillet_background"
+                android:state_pressed="true"></item>
+
+            <item android:drawable="@drawable/fillet_background"></item>
+
+        </selector>
+    </item>
+</ripple>
